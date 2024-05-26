@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy B&B</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="#" class="navbar-logo">Cozy B&B</a>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-links">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-links">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-links">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-links">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Cozy B&B</h1>
+                <p>Your home away from home</p>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Cozy B&B is a charming bed and breakfast located in the heart of the countryside. Our rooms are designed for comfort and relaxation, ensuring a pleasant stay for all our guests.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="image1.jpg" alt="Room 1">
+                    <img src="image2.jpg" alt="Room 2">
+                    <img src="image3.jpg" alt="Breakfast">
+                    <img src="image4.jpg" alt="Garden">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cozy B&B. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

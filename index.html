@@ -53,10 +53,10 @@
             <div class="container">
                 <h2>Gallery</h2>
                 <div class="gallery-grid">
-                    <img src="image1.jpg" alt="Room 1">
-                    <img src="image2.jpg" alt="Room 2">
-                    <img src="image3.jpg" alt="Breakfast">
-                    <img src="image4.jpg" alt="Garden">
+                    <img src="image1.jpg" alt="Room 1" class="gallery-item">
+                    <img src="image2.jpg" alt="Room 2" class="gallery-item">
+                    <img src="image3.jpg" alt="Breakfast" class="gallery-item">
+                    <img src="image4.jpg" alt="Garden" class="gallery-item">
                 </div>
             </div>
         </section>
@@ -80,6 +80,12 @@
     <footer>
         <p>&copy; 2024 Cozy B&B. All rights reserved.</p>
     </footer>
+
+    <!-- Modal for image popups -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
 
     <script src="script.js"></script>
 </body>
